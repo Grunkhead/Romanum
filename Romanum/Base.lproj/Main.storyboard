@@ -1,25 +1,122 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Romanum" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Roman to Arabic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-av-YID">
+                                <rect key="frame" x="-4" y="200" width="383" height="21.5"/>
+                                <color key="backgroundColor" red="1" green="0.69229204519999998" blue="0.48858982359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Insert value in here!" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AW9-P1-xF1" customClass="AllowedCharsTextField" customModule="Romanum" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="237" width="375" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooI-hp-Cs2">
+                                <rect key="frame" x="160" y="140" width="55" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQo-cq-hO2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGr-NG-fLO">
+                                <rect key="frame" x="160" y="275" width="55" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9P-jW-YRG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Convert Arabic to Roman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRp-j6-Xz0">
+                                <rect key="frame" x="-4" y="65" width="383" height="21.5"/>
+                                <color key="backgroundColor" red="1" green="0.69229204519999998" blue="0.48858982359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21.5" id="h7a-3v-gnf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h7a-3v-gnf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="h7a-3v-gnf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Insert value in here!" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cwg-Nc-riC" customClass="AllowedCharsTextField" customModule="Romanum" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="102" width="375" height="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRp-j6-Xz0" secondAttribute="trailing" constant="-20" id="1Be-cQ-P8F"/>
+                            <constraint firstItem="ooI-hp-Cs2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hy-Xd-eqd"/>
+                            <constraint firstItem="QRp-j6-Xz0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="8D7-yD-fo0"/>
+                            <constraint firstItem="cwg-Nc-riC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Biz-L5-DyZ"/>
+                            <constraint firstItem="JfW-av-YID" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EK1-pO-L9E"/>
+                            <constraint firstItem="cwg-Nc-riC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="IcE-Jb-AGS"/>
+                            <constraint firstItem="AW9-P1-xF1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L5m-Jg-bW7"/>
+                            <constraint firstItem="JGr-NG-fLO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NZO-a5-Oab"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JfW-av-YID" secondAttribute="trailing" constant="-20" id="Ok9-VH-zfr"/>
+                            <constraint firstItem="AW9-P1-xF1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="QfA-dP-2bW"/>
+                            <constraint firstItem="cwg-Nc-riC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="82" id="SeA-xE-PCc"/>
+                            <constraint firstItem="AW9-P1-xF1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Slj-Eb-HcX"/>
+                            <constraint firstItem="QRp-j6-Xz0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="V0o-4M-joE"/>
+                            <constraint firstItem="JGr-NG-fLO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="255" id="gzT-w9-X5A"/>
+                            <constraint firstItem="ooI-hp-Cs2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="imF-ei-PKN"/>
+                            <constraint firstItem="JfW-av-YID" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="180" id="raf-eE-LUA"/>
+                            <constraint firstItem="QRp-j6-Xz0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCq-1O-Xje"/>
+                            <constraint firstItem="JfW-av-YID" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="zZJ-ps-YkY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Slj-Eb-HcX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="Slj-Eb-HcX"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="field" destination="cwg-Nc-riC" id="YVV-lW-dYm"/>
+                        <outlet property="field2" destination="AW9-P1-xF1" id="Hgn-TJ-P9e"/>
+                        <outlet property="label" destination="QRp-j6-Xz0" id="cZk-U9-BUh"/>
+                        <outlet property="label2" destination="JfW-av-YID" id="T2Y-mU-Al6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="471"/>
         </scene>
     </scenes>
 </document>

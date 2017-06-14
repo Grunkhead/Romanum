@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551094291C4DC44F00775641 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551094281C4DC44F00775641 /* Converter.swift */; };
+		556864BF1DF4EB04000ADAD3 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556864BE1DF4EB04000ADAD3 /* Validator.swift */; };
 		55D291E11C450875005C4E6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D291E01C450875005C4E6C /* AppDelegate.swift */; };
 		55D291E31C450875005C4E6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D291E21C450875005C4E6C /* ViewController.swift */; };
 		55D291E61C450875005C4E6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D291E41C450875005C4E6C /* Main.storyboard */; };
-		55D291E81C450875005C4E6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55D291E71C450875005C4E6C /* Assets.xcassets */; };
-		55D291EB1C450875005C4E6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D291E91C450875005C4E6C /* LaunchScreen.storyboard */; };
 		55D291F61C450875005C4E6C /* RomanumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D291F51C450875005C4E6C /* RomanumTests.swift */; };
 		55D292011C450875005C4E6C /* RomanumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D292001C450875005C4E6C /* RomanumUITests.swift */; };
+		55DA25171C919A2A006B2FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DA25161C919A2A006B2FC4 /* LaunchScreen.storyboard */; };
+		55DA25191C91D3AA006B2FC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DA25181C91D3AA006B2FC4 /* Images.xcassets */; };
+		55DA2B581C4FFDEC00318D29 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DA2B571C4FFDEC00318D29 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		551094281C4DC44F00775641 /* Converter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		556864BE1DF4EB04000ADAD3 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		55D291DD1C450875005C4E6C /* Romanum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Romanum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D291E01C450875005C4E6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55D291E21C450875005C4E6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55D291E51C450875005C4E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55D291E71C450875005C4E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		55D291EA1C450875005C4E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55D291EC1C450875005C4E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55D291F11C450875005C4E6C /* RomanumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D291F51C450875005C4E6C /* RomanumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanumTests.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		55D291FC1C450875005C4E6C /* RomanumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D292001C450875005C4E6C /* RomanumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanumUITests.swift; sourceTree = "<group>"; };
 		55D292021C450875005C4E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55DA25161C919A2A006B2FC4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55DA25181C91D3AA006B2FC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55DA2B571C4FFDEC00318D29 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +106,12 @@
 				55D291E01C450875005C4E6C /* AppDelegate.swift */,
 				55D291E21C450875005C4E6C /* ViewController.swift */,
 				55D291E41C450875005C4E6C /* Main.storyboard */,
-				55D291E71C450875005C4E6C /* Assets.xcassets */,
-				55D291E91C450875005C4E6C /* LaunchScreen.storyboard */,
 				55D291EC1C450875005C4E6C /* Info.plist */,
+				551094281C4DC44F00775641 /* Converter.swift */,
+				55DA2B571C4FFDEC00318D29 /* DataManager.swift */,
+				55DA25161C919A2A006B2FC4 /* LaunchScreen.storyboard */,
+				55DA25181C91D3AA006B2FC4 /* Images.xcassets */,
+				556864BE1DF4EB04000ADAD3 /* Validator.swift */,
 			);
 			path = Romanum;
 			sourceTree = "<group>";
@@ -194,15 +203,18 @@
 					55D291DC1C450875005C4E6C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8ZGXDQ52J6;
+						LastSwiftMigration = 0810;
 					};
 					55D291F01C450875005C4E6C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8ZGXDQ52J6;
+						LastSwiftMigration = 0810;
 						TestTargetID = 55D291DC1C450875005C4E6C;
 					};
 					55D291FB1C450875005C4E6C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 8ZGXDQ52J6;
+						LastSwiftMigration = 0810;
 						TestTargetID = 55D291DC1C450875005C4E6C;
 					};
 				};
@@ -232,9 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55D291EB1C450875005C4E6C /* LaunchScreen.storyboard in Resources */,
-				55D291E81C450875005C4E6C /* Assets.xcassets in Resources */,
+				55DA25191C91D3AA006B2FC4 /* Images.xcassets in Resources */,
 				55D291E61C450875005C4E6C /* Main.storyboard in Resources */,
+				55DA25171C919A2A006B2FC4 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +272,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55D291E31C450875005C4E6C /* ViewController.swift in Sources */,
+				55DA2B581C4FFDEC00318D29 /* DataManager.swift in Sources */,
+				556864BF1DF4EB04000ADAD3 /* Validator.swift in Sources */,
+				551094291C4DC44F00775641 /* Converter.swift in Sources */,
 				55D291E11C450875005C4E6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,14 +317,6 @@
 				55D291E51C450875005C4E6C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		55D291E91C450875005C4E6C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55D291EA1C450875005C4E6C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,10 +407,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Romanum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.Romanum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -411,10 +423,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Romanum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.Romanum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -426,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.RomanumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Romanum.app/Romanum";
 			};
 			name = Debug;
@@ -438,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.RomanumTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Romanum.app/Romanum";
 			};
 			name = Release;
@@ -449,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.RomanumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Romanum;
 				USES_XCTRUNNER = YES;
 			};
@@ -461,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dbuitenhuis.RomanumUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Romanum;
 				USES_XCTRUNNER = YES;
 			};
@@ -485,6 +506,7 @@
 				55D292071C450875005C4E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55D292081C450875005C4E6C /* Build configuration list for PBXNativeTarget "RomanumTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +515,7 @@
 				55D2920A1C450875005C4E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55D2920B1C450875005C4E6C /* Build configuration list for PBXNativeTarget "RomanumUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +524,7 @@
 				55D2920D1C450875005C4E6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
